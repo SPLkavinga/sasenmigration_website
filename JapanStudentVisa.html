@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sasen Migration Consultant Service</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="./img//logo.jpg">
+        
+
+
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: #f8f9fa;
+                color: #4a4a4a;
+            }
+    
+            /* Hero Section */
+            .hero-section {
+                background: #f8f9fa;
+                color: #201f1f;
+                padding: 4rem 0;
+                text-align: center;
+            }
+    
+            .hero-section h5 {
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+            }
+    
+            .hero-section h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+    
+            .hero-section p {
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+    
+            /* Accordion & Cards */
+            .info-card {
+                border: none;
+                background: #ffffff;
+                box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+                border-radius: 10px;
+            }
+    
+            .accordion-button {
+                font-weight: 500;
+                color: #333;
+                background: #f8f9fa;
+                border-radius: 10px;
+                margin-bottom: 0.5rem;
+            }
+    
+            .accordion-button:focus {
+                box-shadow: none;
+            }
+    
+            .accordion-button:not(.collapsed) {
+                background: #e8ebff;
+                color: #1b1b57;
+                font-weight: 600;
+            }
+    
+            .accordion-item {
+                border: none;
+            }
+    
+            .accordion-body {
+                color: #555;
+                line-height: 1.7;
+            }
+    
+            /* Icon bullets */
+            .icon-bullet {
+                color: #3a3ac1;
+                margin-right: 8px;
+            }
+    
+            /* Footer button */
+            .contact-btn {
+                background: #1b1b57;
+                border: none;
+                color: #fff;
+                border-radius: 50px;
+                padding: 0.75rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                transition: background 0.3s ease;
+            }
+    
+            .contact-btn:hover {
+                background: #3a3ac1;
+            }
+             /* Custom Styles */
+            .card-header h4 {
+                color: white !important;
+            }
+            .btn-submit {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.9rem;
+                width: 200px;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            /* Responsive adjustments */
+            @media (min-width: 768px) {
+                .hero-section h1 {
+                    font-size: 3rem;
+                }
+            }
+        </style>
+
+        
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+         <!-- Topbar Start -->
+         <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>sasen.migration2005@gmail.com</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i> +94 70 158 5500</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <div class="d-inline-flex align-items-center" style="height: 45px;">
+                            <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-whatsapp fw-normal text-secondary"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 shadow-sm">
+                <img src="img/logo.jpg" alt="Sasen Migration Logo" class="img-fluid me-2" style="height: 50px; width:auto;">
+                <a href="index.html" class="navbar-brand d-flex align-items-center p-0">    
+                    <div class="d-flex flex-column">
+                        <h1 class="m-0 fw-bold" style="font-size:1.75rem; color: #730777;">Sasen Migration</h1>
+                        <small class="text-muted" style="font-size:0.9rem;">Specialist in Japan Visa</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler ms-auto border-0 text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-dark fw-semibold mx-2">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link text-dark fw-semibold mx-2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link text-dark fw-semibold mx-2 active">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Gallery.php" class="nav-link text-dark fw-semibold mx-2">Gallery</a>
+                        </li>
+                    </ul>
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill fw-semibold">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Japan student Visa</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                    <li class="breadcrumb-item active text-secondary">Japan Student Visa</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+         <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <h5 class="text-uppercase text-primary-emphasis opacity-75">Information about Japan student Visa</h5>
+                <h1 class="mb-4">Documentation & Qualifications for a Japan Student Visa</h1>
+                <p>
+                    Qualify for this visa, applicant should be less than 27 years and should have passed G C E Advanced Level. 
+                    Our students get a unique opportunity to study Japanese in high -tech language classrooms with a highly skilled 
+                    Japanese language teachers when they get to Japan. The applicant should follow a 2 -year professional Japanese 
+                    course from the language school before and only after the successful completion of the Japanese course 
+                    he/she will be able to join a university, vocational /technical college of their choice.
+                </p>
+            </div>
+        </div>
+
+        <!-- Counter Facts Start -->
+        <div class="container-fluid counter-facts py-4 d-flex justify-content-center align-items-center" style="height: 45vh;">
+            <div class="counter">
+                <div class="counter-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="counter-content text-center">
+                    <h3>Japanese Language School and Universities</h3>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <span class="counter-value" data-toggle="counter-up">10</span>
+                        <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Facts End -->
+
+
+
+        <!-- Content Section -->
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="info-card p-4">
+                        <div class="accordion" id="visaInfoAccordion">
+
+                            <!-- Job Offer -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="fas fa-briefcase icon-bullet"></i>Applying for Japan student visa
+                                        Required Basic Qualifications
+                                        
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i>  Below 30 years old.</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> G.C.E A/L Result [must be at least one subject passed] </li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Must be passed N5 test[ We are conducting N5 course for students who wish to face the N5 exam]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Sponsor [Your sponsor must have a bank balance above
+                                                3 million LKR and must be a blood relation.]
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+
+                            <!-- Certificate of Eligibility -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fas fa-certificate icon-bullet"></i>Required documents to face to the interview which held by Japanese Language School in Japan.
+
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> passed N5 certificate</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> G.C.E A/L and O/L result sheet [must be certified by
+                                                Foreign Ministry.]
+                                            </li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Original School Leaving certificate</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Original Birth Certificate[must be received from city office in 3 months]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i>  National Identity card [photo copy]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> English translations of above 3,4,5</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Colored photo copy of Passport</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Other educational certificate [degree, diploma etc.]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Service Letter [If you worked or working]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Ten color photos 3cm 4cm [must be taken in one month]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> National Identity card of sponsor</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i>  Birth Certificate of sponsor</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Bank balance conformation letter</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> NBank transactions [3 years]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Business registration or service letter</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> six month Salary sheet or Income Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Job Offer -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="fas fa-briefcase icon-bullet"></i>Expenses after you get Visa                                
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i>School fees [one year] - 750,000 to 850,000 JPY</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Hostel fees [one month] - 30,000 to 40,000 JPY</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i> Air Ticket [one way]</li>
+                                            <li><i class="fas fa-circle icon-bullet" style="font-size:0.5rem;"></i>  pocket money 200,000 JPY</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- End of Accordion -->
+                    </div>
+
+                    <!-- <div class="text-center mt-5">
+                        <a class="contact-btn" href="./countries.html">CONTACT US</a>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Form start -->
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="text-center mb-0">Application Form</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <!-- Name -->
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                                </div>
+                                <!-- Contact Number -->
+                                <div class="mb-3">
+                                    <label for="contactNumber" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
+                                </div>
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <!-- Birthday -->
+                                <div class="mb-3">
+                                    <label for="birthday" class="form-label">Birthday</label>
+                                    <input type="date" class="form-control" id="birthday" required>
+                                </div>
+                                <!-- Present Address -->
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Present Address</label>
+                                    <textarea class="form-control" id="address" rows="2" placeholder="Enter your present address" required></textarea>
+                                </div>
+                                <!-- Japanese Language Level -->
+                                <div class="mb-3">
+                                    <label for="languageLevel" class="form-label">Japanese Language Level</label>
+                                    <select class="form-select" id="languageLevel" required>
+                                        <option value="" selected disabled>Select your level</option>
+                                        <option value="N1">N1</option>
+                                        <option value="N2">N2</option>
+                                        <option value="N3">N3</option>
+                                        <option value="N4">N4</option>
+                                        <option value="N5">N5</option>
+                                    </select>
+                                </div>
+                                <!-- Plan After Japanese Language School -->
+                                <div class="mb-3">
+                                    <label for="planAfterSchool" class="form-label">Plan After Japanese Language School</label>
+                                    <textarea class="form-control" id="planAfterSchool" rows="2" placeholder="Describe your plan"></textarea>
+                                </div>
+                                <!-- Plan After Graduation -->
+                                <div class="mb-3">
+                                    <label for="planAfterGraduation" class="form-label">Plan After Graduation</label>
+                                    <select class="form-select" id="planAfterGraduation">
+                                        <option value="" selected disabled>Select your plan</option>
+                                        <option value="Higher Education">Higher Education</option>
+                                        <option value="Work">Work</option>
+                                        <option value="Return to Home Country">Return to Home Country</option>
+                                    </select>
+                                </div>
+                                <!-- Sponsor -->
+                                <div class="mb-3">
+                                    <label for="sponsor" class="form-label">Sponsor</label>
+                                    <select class="form-select" id="sponsor">
+                                        <option value="" selected disabled>Select your sponsor</option>
+                                        <option value="Parent">Parent</option>
+                                        <option value="Relative">Relative</option>
+                                        <option value="Organization">Organization</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <!-- Sponsor Name -->
+                                <div class="mb-3">
+                                    <label for="sponsorName" class="form-label">Sponsor Name</label>
+                                    <input type="text" class="form-control" id="sponsorName" placeholder="Enter sponsor's name">
+                                </div>
+                                <!-- Sponsor Phone Number -->
+                                <div class="mb-3">
+                                    <label for="sponsorPhone" class="form-label">Sponsor Phone Number</label>
+                                    <input type="tel" class="form-control" id="sponsorPhone" placeholder="Enter sponsor's phone number">
+                                </div>
+                                <!-- Sponsor Email -->
+                                <div class="mb-3">
+                                    <label for="sponsorEmail" class="form-label">Sponsor Email</label>
+                                    <input type="email" class="form-control" id="sponsorEmail" placeholder="Enter sponsor's email">
+                                </div>
+                                <!-- Sponsor ID Number -->
+                                <div class="mb-3">
+                                    <label for="sponsorId" class="form-label">Sponsor ID Number</label>
+                                    <input type="text" class="form-control" id="sponsorId" placeholder="Enter sponsor's ID number">
+                                </div>
+                                <!-- Business Name or Occupation -->
+                                <div class="mb-3">
+                                    <label for="businessName" class="form-label">Business Name or Occupation</label>
+                                    <input type="text" class="form-control" id="businessName" placeholder="Enter business name or occupation">
+                                </div>
+                                <!-- Type of Business -->
+                                <div class="mb-3">
+                                    <label for="businessType" class="form-label">Type of Business</label>
+                                    <input type="text" class="form-control" id="businessType" placeholder="Enter type of business">
+                                </div>
+                                <!-- Annual Income -->
+                                <div class="mb-3">
+                                    <label for="annualIncome" class="form-label">Annual Income</label>
+                                    <input type="number" class="form-control" id="annualIncome" placeholder="Enter annual income" min="0">
+                                </div>
+                                <!-- Submit Button -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form end -->
+        <br>
+        <br>
+        <br>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 93/1 HAKMANA ROAD MATARA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> sasen.migration2005@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +94 70 1585500</a>
+                            <a href="" class="mb-3"><i class="fas fa-phone me-2"></i> +94 71 0354270</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-whatsapp fw-normal text-secondary"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday:</h6>
+                                <p class="text-white mb-0">08.30 am to 04.45 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Tuesday-Saturday:</h6>
+                                <p class="text-white mb-0">09.00 am to 04.30 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Back to Top</a>
+                            <a href="./index.html" class=""><i class="fas fa-angle-right me-2"></i>Home </a>
+                            <a href="./service.html" class=""><i class="fas fa-angle-right me-2"></i>Services </a>
+                            <a href="./about.html" class=""><i class="fas fa-angle-right me-2"></i> AboutUs</a>
+                            <a href="./Gallery.php" class=""><i class="fas fa-angle-right me-2"></i> Gallery</a>
+                            <a href="./contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Sasen Migration Consultant Service</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        Designed By <a class="border-bottom text-white" href="https://nexcodia.com">NexCodia Software Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Bootstrap JS (Optional for interactive components) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
